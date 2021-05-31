@@ -11,5 +11,9 @@ $(document).ready(function() {
             text: this.alt
         })
     })
+
+    // logging the cache array
     console.log(cache);
+
+
 });
