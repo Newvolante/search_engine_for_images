@@ -15,5 +15,8 @@ $(document).ready(function() {
     // logging the cache array
     console.log(cache);
 
-
+    // fires whenever something is written in the searchbox
+    $('#liveSearch').on('input', function() {
+        console.log('character typed');
+    });
 });
