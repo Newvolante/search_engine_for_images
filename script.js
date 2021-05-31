@@ -4,6 +4,7 @@ $(document).ready(function() {
     // object to contain images and their alt text
     let cache = [];
 
+    // adding alt text and element to the cache array to optimize performance
     $('img.color').each(function() {
         cache.push({
             element: this,
