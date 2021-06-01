@@ -17,6 +17,21 @@ $(document).ready(function() {
 
     // fires whenever something is written in the searchbox
     $('#liveSearch').on('input', function() {
-        console.log('character typed');
+
+        // when you start typing all pics disappear
+        $('img.color').hide();
+
+        // input text
+        $inputText = $('#liveSearch').val();
+        console.log($inputText);
+
+        // iterating through cache to find matches
+        cache.forEach((item, index) => {
+            match = item.text.indexOf($inputText);
+            
+            if(match !== -1) {
+                item.element.style.display = "inline";
+            }
+        });
     });
 });
