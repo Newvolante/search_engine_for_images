@@ -22,7 +22,7 @@ $(document).ready(function() {
         $('img.color').hide();
 
         // input text
-        $inputText = $('#liveSearch').val();
+        $inputText = $('#liveSearch').val().trim().toLowerCase();
         console.log($inputText);
 
         // iterating through cache to find matches
